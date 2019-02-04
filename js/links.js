@@ -9,11 +9,11 @@ window.addEventListener("load",e=>{
         {
           text:"Schedule",
           href:"#"
-        }
+        },
         {
           text:"Expectations",
           href:"#"
-        }
+        },
         {
           text:"Blog",
           href:"#"
@@ -25,11 +25,11 @@ window.addEventListener("load",e=>{
         {
           text:"Schedule",
           href:"#"
-        }
+        },
         {
           text:"Expectations",
           href:"#"
-        }
+        },
         {
           text:"Blog",
           href:"#"
