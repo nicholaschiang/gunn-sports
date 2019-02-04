@@ -1,4 +1,7 @@
+// TODO: make it easier to maintenance such links
 window.addEventListener("load",e=>{
+
+  // Define an array of header links and sublists
   var navlinks=[
     {
       text:"Cross Country",
@@ -42,8 +45,10 @@ window.addEventListener("load",e=>{
       text:"FAQ",
       href:"#"
     }
-  ],
-  footerlinks=[
+  ];
+
+  // Define an array of footer links and sublists
+  var footerlinks=[
     {
       heading:"Cross Country",
       links:[
@@ -68,22 +73,38 @@ window.addEventListener("load",e=>{
       ]
     }
   ];
-  var navbar=document.querySelector('.navigation .container ul'),
-  footer=document.querySelector('.footer .container'),
-  t=document.createDocumentFragment();
+
+  // Get navbar and footer references
+  var navbar=document.querySelector('.navigation .container ul');
+  var footer=document.querySelector('.footer .container');
+
+  // Header links
+  var t=document.createDocumentFragment();
   for (var link of navlinks) {
-    var li=document.createElement("li"),
-    linkelem=document.createElement("a"),
-    ul;
+
+    // Define commonly used elements for convenience
+    var li=document.createElement("li");
+    var linkelem=document.createElement("a");
+    var ul;
+
+    // Check for single links (i.e. links without sublinks)
     if (link.href) linkelem.href=link.href;
     linkelem.appendChild(document.createTextNode(link.text));
     li.appendChild(linkelem);
+
+    // Otherwise, parse out sublinks as well
     if (link.links) {
       ul=document.createElement("ul");
       for (var sublink of link.links) {
-        var sli=document.createElement("li"),
-        slinkelem=document.createElement("a");
+
+        // Define commonly used elements for convenience
+        var sli=document.createElement("li");
+        var slinkelem=document.createElement("a");
+
+        // Check to ensure that each sublink contains valid reference
         if (sublink.href) slinkelem.href=sublink.href;
+
+        // Parse sublinks into navbar menu
         slinkelem.appendChild(document.createTextNode(sublink.text));
         sli.appendChild(slinkelem);
         ul.appendChild(sli);
@@ -93,12 +114,19 @@ window.addEventListener("load",e=>{
     t.appendChild(li);
   }
   navbar.appendChild(t);
+
+  // Footer links
   t=document.createDocumentFragment();
   for (var section of footerlinks) {
-    var div=document.createElement("div"),
-    strong=document.createElement("strong");
+
+    // Define commonly used elements for convenience
+    var div=document.createElement("div");
+    var strong=document.createElement("strong");
+
     strong.appendChild(document.createTextNode(section.heading));
     div.appendChild(strong);
+
+    // Parse out footer links
     for (var link of section.links) {
       var a=document.createElement("a");
       a.href=link.href;
