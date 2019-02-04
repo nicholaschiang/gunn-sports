@@ -1,0 +1,175 @@
+.content {
+  font-size: 16px;
+}
+.content.dark * {
+  border-color: rgba(255,255,255,0.15);
+  box-shadow: none;
+}
+.content h1, .content h2, .content h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+.content h1 {
+  font-size: 2em;
+  margin: 0.5em 0;
+  border-bottom: 0.03em solid rgba(0,0,0,0.15);
+  padding-bottom: 0.3em;
+}
+.content h1:first-child {
+  margin-top: 0;
+}
+.content h2 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+}
+.content p {
+  margin: 0.5em 0;
+  line-height: 1.15;
+}
+.content a {
+  color: #FF594C;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all .2s;
+  position: relative;
+}
+.content a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #FF594C;
+  height: 1px;
+  width: 0;
+  transition: all .2s;
+}
+.content a:hover::before, .content a:focus::before {
+  width: 100%;
+}
+.content a:active {
+  color: white;
+  background-color: #FF594C;
+}
+.content a:active::before {
+  opacity: 0;
+}
+.content img {
+  border-radius: 5px;
+  max-width: 100%;
+}
+.content ul, .content ol {
+  padding-left: 1.5em;
+  margin: 0.5em 0;
+  list-style: none;
+}
+.content ol > li {
+  counter-increment: ol;
+}
+.content ol > li:first-child {
+  counter-reset: ol;
+}
+.content li {
+  margin: 0.5em 0;
+  position: relative;
+}
+.content li::before {
+  opacity: 0.5;
+  position: absolute;
+  right: 100%;
+  margin-right: 0.3em;
+}
+.content ul > li::before {
+  content: '-';
+}
+.content ol > li:before {
+  content: counter(ol);
+  font-family: 'Montserrat', sans-serif;
+}
+.content hr {
+  width: 50%;
+  border: none;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  margin: 0.5em auto;
+}
+.content textarea {
+  display: block;
+  padding: 10px;
+  max-width: 100%;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 0.3125em;
+  margin: 0.5em 0;
+  box-sizing: border-box;
+  transition: all .2s;
+  background-color: white;
+}
+.content button {
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  padding: 0.625em;
+  margin: 0.5em 0;
+  text-transform: uppercase;
+  font-family: 'Montserrat',sans-serif;
+  transition: all .1s;
+}
+.content button:hover, content button:focus {
+  color: #FF594C;
+  border-color: #FF594C;
+}
+.content button:active {
+  background-color: #FF594C;
+  color: white;
+}
+.content input, .content select {
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 5px;
+  padding: 0.3125em;
+  margin: 0 0.3125em;
+  transition: all .2s;
+  max-width: 100%;
+  background-color: white;
+  height: 1em;
+  box-sizing: content-box;
+}
+.content select {
+  cursor: pointer;
+  padding-right: 1.3125em;
+  background-image: url('../icons/material_arrow_drop_down.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.content input:focus, .content select:focus, .content textarea:focus {
+  border-color: #FF594C;
+}
+.content.dark button:not(:active), .content.dark input, .content.dark select, .content.dark textarea {
+  background-color: transparent;
+}
+.content.dark option {
+  background-color: black;
+}
+.content label {
+  font-family: 'Montserrat', sans-serif;
+  /*text-transform: uppercase;*/
+}
+.content table {
+  border-collapse: collapse;
+  margin: 0.5em 0;
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 5px;
+  max-width: 100%;
+}
+.content tr:nth-child(2n+1) {
+  background-color: rgba(0,0,0,0.05);
+}
+.content.dark table, .content.dark tr:nth-child(2n+1) {
+  background-color: rgba(255,255,255,0.05);
+}
+.content td, .content th {
+  padding: 0.625em;
+}
+.content th {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
