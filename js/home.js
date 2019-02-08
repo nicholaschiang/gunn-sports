@@ -5,12 +5,14 @@ window.addEventListener("load",e=>{
   imagesel=document.querySelector('.imageselect'),
   tocontent=document.querySelector('.scrolldown'),
   images=[
-    "https://images.unsplash.com/reserve/yapfjxRqy2d2rGRNc2yQ_zavrsnica-9-indie.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&s=e69698de60f5688845748eb6579cf59a",
+    // "https://images.unsplash.com/reserve/yapfjxRqy2d2rGRNc2yQ_zavrsnica-9-indie.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&s=e69698de60f5688845748eb6579cf59a",
     "https://images.unsplash.com/photo-1467173572719-f14b9fb86e5f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&s=ad26590bd0d6a0165892fb6485976020",
     "https://images.unsplash.com/37/IHLjdHdzSvi0rgUMMlSK_TE3_0286.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&s=c5ccdbe2d0d2fa436724e2366f32661c",
-    "https://images.unsplash.com/reserve/m6rT4MYFQ7CT8j9m2AEC_JakeGivens%20-%20Sunset%20in%20the%20Park.JPG?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&s=4ab7d1b6931e19fa21a31b71ed3fbbcb"
+    // "https://images.unsplash.com/reserve/m6rT4MYFQ7CT8j9m2AEC_JakeGivens%20-%20Sunset%20in%20the%20Park.JPG?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&s=4ab7d1b6931e19fa21a31b71ed3fbbcb",
+    // "images/justin-on-track.jpg",
+    // "images/vascaino.jpg",
   ], // https://source.unsplash.com/featured/1600x900/?nature
-  DEFAULT_IMAGE=3,
+  DEFAULT_IMAGE=1,
   animating=false,
   currentimage=DEFAULT_IMAGE,
   animatingscroll=false,
