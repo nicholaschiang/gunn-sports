@@ -8,15 +8,15 @@ window.addEventListener("load",e=>{
       links:[
         {
           text:"Schedule",
-          href:"#"
+          href:"cross-country/#"
         },
         {
           text:"Expectations",
-          href:"#"
+          href:"cross-country/#"
         },
         {
           text:"Blog",
-          href:"#"
+          href:"cross-country/#"
         }
       ]
     },{
@@ -24,15 +24,15 @@ window.addEventListener("load",e=>{
       links:[
         {
           text:"Schedule",
-          href:"#"
+          href:"track-and-field/#"
         },
         {
           text:"Expectations",
-          href:"#"
+          href:"track-and-field/#"
         },
         {
           text:"Blog",
-          href:"#"
+          href:"track-and-field/#"
         }
       ]
     },{
@@ -54,7 +54,7 @@ window.addEventListener("load",e=>{
       links:[
         {
           text:"Facebook",
-          href:"#"
+          href:"https://www.facebook.com/groups/2124800487733075/"
         },{
           text:"Instagram",
           href:"#"
@@ -65,7 +65,7 @@ window.addEventListener("load",e=>{
       links:[
         {
           text:"Facebook",
-          href:"#"
+          href:"https://www.facebook.com/groups/590907144688273/?ref=group_browse_new"
         },{
           text:"Instagram",
           href:"#"
