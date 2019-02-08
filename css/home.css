@@ -4,10 +4,11 @@ body {
 
 .navigation {
   background-color: transparent;
-  position: absolute;
+  position: fixed;
   box-shadow: none;
   background-image: linear-gradient(180deg,rgba(0,0,0,0.5),transparent);
   transition: background-color .2s;
+  z-index: 10;
 }
 .navigation > .container > ul > li:hover, .navigation > .container > ul > li.hover {
   color: white;
