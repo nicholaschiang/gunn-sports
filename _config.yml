@@ -1,0 +1,8 @@
+name: Nicholas Chiang
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
+collections:
+  - cross-country
+  - track-and-field
+# theme: jekyll-theme-slate
+target-url: /gunn-sports # Change this for different hosting locations

@@ -1,4 +1,5 @@
-// TODO: make it easier to maintenance such links
+---
+---
 window.addEventListener("load",e=>{
 
   // Define an array of header links and sublists
@@ -8,15 +9,15 @@ window.addEventListener("load",e=>{
       links:[
         {
           text:"Schedule",
-          href:"cross-country/#"
+          href:"{{ site.target-url }}/cross-country/#"
         },
         {
           text:"Expectations",
-          href:"cross-country/#"
+          href:"{{ site.target-url }}/cross-country/#"
         },
         {
           text:"Blog",
-          href:"cross-country/#"
+          href:"{{ site.target-url }}/cross-country/#"
         }
       ]
     },{
@@ -24,26 +25,26 @@ window.addEventListener("load",e=>{
       links:[
         {
           text:"Schedule",
-          href:"track-and-field/#"
+          href:"{{ site.target-url }}/track-and-field/#"
         },
         {
           text:"Expectations",
-          href:"track-and-field/#"
+          href:"{{ site.target-url }}/track-and-field/#"
         },
         {
           text:"Blog",
-          href:"track-and-field/#"
+          href:"{{ site.target-url }}/track-and-field/#"
         }
       ]
     },{
       text:"Routes",
-      href:"#"
+      href:"{{ site.target-url }}/routes/#"
     },{
       text:"Contact",
-      href:"#"
+      href:"{{ site.target-url }}/contact/#"
     },{
       text:"FAQ",
-      href:"#"
+      href:"{{ site.target-url }}/faq/#"
     }
   ];
 

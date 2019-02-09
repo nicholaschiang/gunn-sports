@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gunn High School Sports</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ site.target-url }}/css/notcontent.css">
+    <link rel="stylesheet" href="{{ site.target-url }}/css/content.css">
+    <link rel="stylesheet" href="{{ site.target-url }}/css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  </head>
+  <body>
+    <div class="naturewrapper">
+      <div class="naturehatesafari">
+        <img alt="nature." class="natureback">
+        <canvas class="naturetransition" width="1600" height="900"></canvas>
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="container">
+        <i class="material-icons menu">menu</i>
+        <i class="material-icons search">search</i>
+        <i class="material-icons login"><a href="#">lock_open</a></i>
+        <input type="search" placeholder="Search" class="searchbar">
+        <ul></ul>
+      </div>
+    </div>
+    <div class="titlewrapper">
+      <h1 class="title">{{ page.title }}</h1>
+      <div class="abovecontent">
+        <i class="material-icons scrolldown">keyboard_arrow_down</i>
+        <ul class="imageselect"></ul>
+      </div>
+    </div>
+    {% unless page.content == "" %}
+      <div class="content">
+        {{ page.content | markdownify }}
+      </div>
+    {% endunless %}
+    {% if page.target %}
+      <div class="news content dark">
+        {% for page in site[page.target] %}
+          <div class={{ target.label }}>
+          <p>{{ page.content | markdownify }}<p>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    <div class="footer">
+      <ul class='social'>
+        <li><a href="#"><img src="{{ site.target-url }}/icons/facebook.svg" alt="Facebook"></a></li>
+        <li><a href="#"><img src="{{ site.target-url }}/icons/twitter.svg" alt="Twitter"></a></li>
+        <li><a href="#"><img src="{{ site.target-url }}/icons/instagram.svg" alt="Instagram"></a></li>
+        <li><a href="#"><img src="{{ site.target-url }}/icons/snapchat.svg" alt="Snapchat"></a></li>
+        <li><a href="#"><img src="{{ site.target-url }}/icons/youtube.svg" alt="Youtube"></a></li>
+      </ul>
+      <div class="container">
+        <div class="address">
+          <strong>Henry M. Gunn High School</strong>
+          <a href="https://www.google.com/maps/place/Henry+M+Gunn+High+School/"><span>780 Arastradero Rd</span>
+          <span>Palo Alto, California 94306</span></a>
+          <span>Phone: (650) 354-8200</span>
+          <span>Fax: (650) 493-7801</span>
+          <span>Attendance: (650) 354-8210</span>
+        </div>
+      </div>
+      <span class="disclaimer">This is not the official <a href="https://sites.google.com/a/pausd.org/gunn-cross-country/home">Gunn sports website</a>; it's a redesign of it which is <a href="https://github.com/nicholaschiang/gunn-sports-remake">open source here</a>.</span>
+    </div>
+    <script src="{{ site.target-url }}/js/touchy.js" charset="utf-8"></script>
+    <script src="{{ site.target-url }}/js/home.js" charset="utf-8"></script>
+    <script src="{{ site.target-url }}/js/links.js" charset="utf-8"></script>
+  </body>
+</html>
